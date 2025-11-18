@@ -1,0 +1,170 @@
+/* ------------------- RESET ------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.6;
+    padding: 40px 80px;
+}
+
+
+/* ------------------- HEADER ------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header a:hover {
+    opacity: 0.6;
+}
+
+
+/* ------------------- SECTION ABOUT ------------------- */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+/* Photo ronde */
+.photo img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/* Textes */
+.intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    max-width: 380px;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+
+/* ------------------- BOUTONS ------------------- */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Couleurs identiques à la maquette */
+.buttons a:nth-child(1) {
+    background-color: #f1c40f;   /* Jaune */
+}
+
+.buttons a:nth-child(2) {
+    background-color: #e74c3c;   /* Rouge */
+}
+
+.buttons a:nth-child(3) {
+    background-color: #a9d6d3;   /* Bleu clair */
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+
+/* ------------------- FOOTER ------------------- */
+footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #dcdcdc;
+    font-size: 13px;
+
+    /* ALIGNEMENT HORIZONTAL */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Pour que tout soit sur une seule ligne */
+    gap: 40px;
+}
+
+/* Conteneur gauche : téléphone + email */
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Conteneur du milieu : réseaux */
+footer .social {
+    text-align: center;
+}
+
+/* Réseaux sociaux en ligne */
+footer .social ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Copyright tout à droite */
+footer p:last-child {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+}
+

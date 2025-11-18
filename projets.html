@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Jean-luc Mukendi</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projets - Jean-luc Mukendi</title>
+
+
+  <!-- Lier le CSS global (ou projets.css si tu préfères) -->
+  <link rel="stylesheet" href="projets.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <h1 class="site-title">Jean-luc Mukendi</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Jean-luc Mukendi</h1>
+  <main class="page page-projets">
+    <div class="container">
+      <h2 class="page-title">Mes projets</h2>
 
-        <nav>
-            <ul>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <!-- ZONE PRINCIPALE : illustration à gauche, contenu à droite -->
+      <section id="zone-projets" class="zone-projets">
+        <!-- Bloc illustration -->
+        <aside class="illustration" aria-hidden="false">
+          <!-- Remplace cette image par ta capture/illustration -->
+          <img src="images/illustration.png" alt="Capture d'illustration du projet">
+        </aside>
 
+        <!-- Bloc contenu projets -->
+        <div class="contenu-projets">
+          <!-- Structure répétable pour chaque projet -->
+          <article class="projet-item">
+            <h3 class="projet-title">Titre du projet 1</h3>
+            <p class="projet-excerpt">Courte description — à remplir plus tard.</p>
+            <!-- Si tu veux un bouton ou lien vers la démo/fiche -->
+            <p><a class="projet-link" href="#">Voir la fiche</a></p>
+          </article>
 
-    <!-- CONTENU PRINCIPAL -->
-    <main>
+          <article class="projet-item">
+            <h3 class="projet-title">Titre du projet 2</h3>
+            <p class="projet-excerpt">Courte description — à remplir plus tard.</p>
+            <p><a class="projet-link" href="#">Voir la fiche</a></p>
+          </article>
 
-        <h2>Mes Projets</h2>
+          <article class="projet-item">
+            <h3 class="projet-title">Titre du projet 3</h3>
+            <p class="projet-excerpt">Courte description — à remplir plus tard.</p>
+            <p><a class="projet-link" href="#">Voir la fiche</a></p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
 
-        <section id="zone-projets">
-
-            <!-- Illustration à gauche -->
-            <div class="illustration">
-                <img src="images/illustration.png" alt="Illustration projets">
-            </div>
-
-            <!-- Contenu des projets -->
-            <div class="contenu-projets">
-
-                <section>
-                    <h3>Projet 1</h3>
-                    <p>À remplir…</p>
-                </section>
-
-                <section>
-                    <h3>Projet 2</h3>
-                    <p>À remplir…</p>
-                </section>
-
-                <section>
-                    <h3>Projet 3</h3>
-                    <p>À remplir…</p>
-                </section>
-
-            </div>
-
-        </section>
-
-    </main>
-
+  <footer class="site-footer">
+    <p>© <span id="year"></span>2025 Jean-luc Mukendi</p>
+  </footer>
 </body>
 </html>

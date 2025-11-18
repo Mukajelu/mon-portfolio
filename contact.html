@@ -3,109 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Jean-luc Mukendi</title>
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="contact.css">
 </head>
 
-<body>
+<body class="contact-page">
 
-    <!-- HEADER -->
     <header>
         <h1>Jean-luc Mukendi</h1>
 
         <nav>
             <ul>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><strong> Accueil</strong></a></li>
+                <li><a href="cv.html"><strong>CV</strong> </a></li>
+                <li><a href="projets.html"><strong>Projets</strong> </a></li>
+                <li><a href="contact.html"><strong>Contact</strong> </a></li>
             </ul>
         </nav>
     </header>
 
+    <main class="container">
 
-    <!-- SECTION CONTACT -->
-    <main>
+        <h2 class="page-title">Me Contacter</h2>
 
-        <section id="informations-contact">
-            <h2>Contact</h2>
+        <div class="contact-wrapper">
 
-            <div>
-                <h3>Phone</h3>
-                <p>+243976987360/+243896256273</p>
+            <!-- CARTE D'INFO DIRECTE -->
+            <div class="contact-card">
+                <h3>Informations directes</h3>
+
+                <p><strong>Email :</strong> mukendiluc04@gmail.com</p>
+                <p><strong>Téléphone :</strong> +243 896256273 </p>
+                <p><strong>WhatsApp :</strong>  +243 976987360 </p>
+                <p><strong>Adresse :</strong> 81, av mpolo c/lubumbashi</p>
+
+                <div class="contact-links">
+                    <a href="#" class="btn-contact">WhatsApp</a>
+                    <a href="mailto:mukendiluc04@gmail.com" class="btn-contact">Email</a>
+                </div>
             </div>
 
-            <div>
-                <h3>Email</h3>
-                <p>mukendiluc04@gmail.com</p>
-            </div>
-        </section>
+            <!-- FORMULAIRE -->
+            <form class="contact-form">
+                <label>Nom :</label>
+                <input type="text" placeholder="Votre nom">
 
+                <label>Email :</label>
+                <input type="email" placeholder="Votre adresse email">
 
-        <!-- FORMULAIRE -->
-        <section id="formulaire">
-            <form action="#" method="post">
+                <label>Message :</label>
+                <textarea rows="6" placeholder="Votre message..."></textarea>
 
-                <!-- Noms -->
-                <div>
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" id="firstname" name="firstname">
-                </div>
-
-                <div>
-                    <label for="lastname">Last Name</label><br>
-                    <input type="text" id="lastname" name="lastname">
-                </div>
-
-                <!-- Email + Sujet -->
-                <div>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div>
-                    <label for="subject">Subject</label><br>
-                    <input type="text" id="subject" name="subject">
-                </div>
-
-                <!-- Message -->
-                <div>
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-
-                <!-- Bouton -->
                 <button type="submit">Envoyer</button>
-
             </form>
-        </section>
 
-
-        <!-- FOOTER -->
-        <footer>
-
-            <div>
-                <h4>Téléphone</h4>
-                <p>+243976987360/+243896256273</p>
-            </div>
-
-            <div>
-                <h4>Email</h4>
-                <p>mukendiluc042@gmail.com</p>
-            </div>
-
-            <div>
-                <h4>Suivez-moi</h4>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-
-            <p>© 2025 By Jean-luc Mukendi</p>
-
-        </footer>
+        </div>
 
     </main>
+
+    <footer>
+        © 2025 — Jean-luc Mukendi
+    </footer>
 
 </body>
 </html>

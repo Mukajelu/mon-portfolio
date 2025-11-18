@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Jean-luc Mukendi</title>
+    <title>Mon CV</title>
+
+    <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="cv.css">
 </head>
 
-<body>
+<body class="cv-page">
 
     <!-- HEADER -->
     <header>
@@ -14,6 +17,7 @@
 
         <nav>
             <ul>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,36 +25,68 @@
         </nav>
     </header>
 
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
 
-    <main>
+        <h2 class="page-title">Curriculum Vitae</h2>
 
-        <h2>Curriculum Vitae</h2>
-
-        <!-- SECTION IDENTITÉ -->
-        <section id="identite">
+        <!-- SECTION INFORMATION PERSONNELLE -->
+        <section class="cv-section">
             <h3>Informations personnelles</h3>
-            <p>À remplir…</p>
+
+            <p><strong>Nom :</strong> (à remplir)</p>
+            <p><strong>Email :</strong> (à remplir)</p>
+            <p><strong>Téléphone :</strong> (à remplir)</p>
+            <p><strong>Adresse :</strong> (à remplir)</p>
         </section>
 
         <!-- SECTION COMPÉTENCES -->
-        <section id="competences">
+        <section class="cv-section">
             <h3>Compétences</h3>
-            <p>À remplir…</p>
-        </section>
-
-        <!-- SECTION FORMATION -->
-        <section id="formation">
-            <h3>Formation</h3>
-            <p>À remplir…</p>
+            <ul>
+                <li>Compétence 1</li>
+                <li>Compétence 2</li>
+                <li>Compétence 3</li>
+                <li>Compétence 4</li>
+            </ul>
         </section>
 
         <!-- SECTION EXPÉRIENCE -->
-        <section id="experience">
-            <h3>Expérience Professionnelle</h3>
-            <p>À remplir…</p>
+        <section class="cv-section">
+            <h3>Expérience professionnelle</h3>
+
+            <div class="cv-item">
+                <h4>Poste — Entreprise (Années)</h4>
+                <p>Description rapide (à remplir).</p>
+            </div>
+
+            <div class="cv-item">
+                <h4>Poste — Entreprise (Années)</h4>
+                <p>Description rapide (à remplir).</p>
+            </div>
+        </section>
+
+        <!-- SECTION FORMATION -->
+        <section class="cv-section">
+            <h3>Formations</h3>
+
+            <div class="cv-item">
+                <h4>Titre formation — Établissement (Année)</h4>
+                <p>(à remplir)</p>
+            </div>
+
+            <div class="cv-item">
+                <h4>Titre formation — Établissement (Année)</h4>
+                <p>(à remplir)</p>
+            </div>
         </section>
 
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Jean-luc mukendi
+    </footer>
 
 </body>
 </html>
